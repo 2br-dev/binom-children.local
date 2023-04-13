@@ -14,6 +14,10 @@ const webpack = require('webpack-stream');
 
 //= HTML ============================================
 const include = require('gulp-file-include');
+const beautifyOptions = {
+	spaceIndent: 4
+}
+const beautify = require('gulp-html-beautify');
 const sync = require('browser-sync').init({
 	server: {
 		baseDir: './release/'
@@ -38,6 +42,7 @@ gulp.task('scss', () => {
 gulp.task('html', () => {
 	return gulp.src('./src/html/**/*.html')
 		.pipe(include())
+		.pipe(beautify(beautifyOptions))
 		.pipe(gulp.dest('./release/'))
 		.pipe(sync.stream())
 })
