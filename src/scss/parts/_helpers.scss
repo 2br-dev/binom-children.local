@@ -1,0 +1,65 @@
+body{
+
+	& .bttn{
+		font-size: 23px;
+		display: inline-block;
+		line-height: 2em;
+		padding: 0 1em;
+		border-radius: 1em;
+		background-color: $primary;
+		color: #fff;
+		transition: box-shadow .2s;
+
+		&:hover{
+			@include shadow;
+		}
+	}
+
+	& .bttn-white{
+		@extend .bttn;
+		background-color: #fff;
+		color: $primary;
+	}
+
+	& .white-block{
+		padding: 2vmax;
+		background-color: #fff;
+		border-radius: $border-radius;
+		margin-bottom: $gutter-width;
+		box-sizing: border-box;
+		@include shadow-thin;
+
+		& h2{
+			margin-top: 0;
+		}
+	}
+
+	& .salad-block{
+		@extend .white-block;
+		box-shadow: none;
+		background-color: #F8FFE3;
+		position: relative;
+	}
+
+	& .pattern{
+
+		min-width: 300px;
+
+		@media(max-width: $medium){
+			// display: none;
+		}
+	}
+
+	& .no-margin{
+		margin: 0;
+	}
+
+	& footer{
+		padding: 2vmax;
+		background-color: #CDF363;
+
+		& a{
+			color: $primary;
+		}
+	}
+}

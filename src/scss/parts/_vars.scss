@@ -1,0 +1,31 @@
+//= Media queries ========================================
+//= Less, then extra-small	// T (tiny)
+$extra-small: 400px;			// XS (extra-small)
+$small: 600px;					// S (small)
+$medium: 950px;					// M (medium)
+$large: 1200px;					// L (large)
+$extra-large: 1900px;			// XL (extra-large)
+$huge: 1901px;					// H (huge)
+
+//= Columns gutter =======================================
+$cols: 12;						// Column-count
+$gutter-width: 30px;			// Space between columns
+
+$primary: #9747FF;
+$text: #16197A;
+
+$border-radius: .7vmax;
+
+@mixin shadow{
+	box-shadow: 0 2px 4px rgba(black, .2),
+				0 4px 8px rgba(black, .2),
+				0 6px 12px rgba(black, .2),
+				0 8px 16px rgba(black, .2);
+}
+
+@mixin shadow-thin{
+	box-shadow: 0 1px 2px rgba(black, .1),
+				0 2px 4px rgba(black, .1),
+				0 3px 6px rgba(black, .1),
+				0 4px 8px rgba(black, .1);
+}
