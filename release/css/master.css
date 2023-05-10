@@ -4010,6 +4010,16 @@ body section {
             position: relative;
             width: 100%;
             height: auto; } }
+        @media (max-width: 1400px) and (min-width: 950px) {
+          body section#hero .img-wrapper img {
+            position: relative;
+            height: 100%;
+            width: calc(130% + $gutter-width);
+            -o-object-fit: cover;
+               object-fit: cover;
+            margin-left: -30%;
+            -o-object-position: left center;
+               object-position: left center; } }
       @media (max-width: 950px) {
         body section#hero .img-wrapper img {
           position: relative;
@@ -4026,6 +4036,32 @@ body section {
     @media (max-width: 600px) {
       body section#hero {
         padding-bottom: 8vmax; } }
+    body section#hero .support-wrapper {
+      width: -moz-fit-content;
+      width: fit-content; }
+      body section#hero .support-wrapper p {
+        text-align: center;
+        margin-top: 0; }
+    body section#hero .support {
+      display: flex;
+      flex-wrap: wrap;
+      width: -moz-fit-content !important;
+      width: fit-content !important;
+      justify-content: center; }
+      @media (max-width: 1400px) {
+        body section#hero .support {
+          display: block;
+          margin: 20px 0; } }
+      body section#hero .support a {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px; }
+        body section#hero .support a img {
+          height: 80px; }
+      body section#hero .support p {
+        display: block;
+        width: 100%; }
   body section#event-place {
     background-color: #E2D8FF;
     margin-top: 0;

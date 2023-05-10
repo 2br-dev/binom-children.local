@@ -85,6 +85,14 @@ body{
 						height: auto;
 					}
 
+					@media(max-width: 1400px) and (min-width: 950px){
+						position: relative;
+						height: 100%;
+						width: calc(130% + $gutter-width);
+						object-fit: cover;
+						margin-left: -30%;
+						object-position: left center;
+					}
 				}
 
 				@media(max-width: $medium){
@@ -111,6 +119,44 @@ body{
 
 			@media(max-width: $small){
 				padding-bottom: 8vmax;
+			}
+
+			& .support-wrapper{
+				width: fit-content;
+
+				& p{
+					text-align: center;
+					margin-top: 0;
+				}
+			}
+
+			& .support{
+
+				display: flex;
+				flex-wrap: wrap;
+				width: fit-content !important;
+				justify-content: center;
+
+				@media(max-width: 1400px){
+					display: block;
+					margin: 20px 0;
+				}
+
+				& a{
+					display: inline-block;
+					margin-left: 20px;
+					margin-right: 20px;
+					margin-bottom: 20px;
+
+					& img{
+						height: 80px;
+					}
+				}
+
+				& p{
+					display: block;
+					width: 100%;
+				}
 			}
 		}
 
